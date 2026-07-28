@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wzm170.github.io/kaoyan-seo/sitemap.xml

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>考研干货站 | 政治英语数学专业课全科复习资料</title>
+<meta name="description" content="考研全科干货:政治英语数学专业课复习规划、避坑指南、真题与资料推荐。AI 辅助每日更新。">
+<link rel="canonical" href="https://wzm170.github.io/kaoyan-seo/">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="./">考研干货站</a>
+    <span class="tag">每日更新 · 全科覆盖</span>
+  </div>
+</header>
+<main class="wrap">
+  <section class="hero">
+    <h1>考研全科干货,每天多懂一点</h1>
+    <p>政治 · 英语 · 数学 · 408 · 法硕 · 教育学 …… 复习规划、避坑指南、真题资料一站搞定。</p>
+    <div class="ad">[百度联盟 / AdSense 首页广告位]</div>
+  </section>
+  <section id="list" class="list">
+    <p class="loading">文章加载中…</p>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">© 考研干货站 · 内容由 AI 辅助生成 · <a href="sitemap.xml">sitemap</a></div>
+</footer>
+<script>
+fetch('manifest.json').then(function(r){return r.json();}).then(function(m){
+  var el=document.getElementById('list');
+  if(!m.articles||!m.articles.length){el.innerHTML='<p>暂无文章,敬请期待。</p>';return;}
+  el.innerHTML=m.articles.map(function(a){
+    return '<a class="card" href="'+a.url+'">'+
+      '<span class="cat">'+a.category+'</span>'+
+      '<h2>'+a.title+'</h2>'+
+      '<p>'+a.description+'</p>'+
+      '<span class="date">'+a.date+'</span>'+
+    '</a>';
+  }).join('');
+}).catch(function(e){
+  document.getElementById('list').innerHTML='<p>加载失败,请稍后刷新。</p>';
+});
+</script>
+</body>
+</html>
